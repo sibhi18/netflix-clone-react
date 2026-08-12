@@ -1,0 +1,41 @@
+.movies-page {
+  min-height: 100vh;
+  background: #111;
+  color: white;
+  padding: 40px 30px;
+}
+
+.movies-page h1 {
+  font-size: 36px;
+  margin-bottom: 24px;
+}
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .movies-page {
+    padding: 32px 24px;
+  }
+
+  .movies-page h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .movies-page {
+    padding: 24px 16px;
+  }
+
+  .movies-page h1 {
+    font-size: 2rem;
+  }
+
+  .movies-grid {
+    gap: 16px;
+  }
+}

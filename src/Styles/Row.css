@@ -1,0 +1,76 @@
+.row {
+    padding: 20px;
+    background: #141414;
+    color: white;
+}
+
+.row h2 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.row-cards {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    background: #141414;
+
+}
+
+.row-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.row-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.row-button {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+     transition: background 0.3s ease; 
+}
+
+@media (max-width: 1024px) {
+    .row {
+        padding: 18px 16px;
+    }
+
+    .row h2 {
+        font-size: 1.35rem;
+    }
+
+    .row-buttons {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .row-button {
+        padding: 8px 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row {
+        padding: 16px 12px;
+    }
+
+    .row h2 {
+        font-size: 1.2rem;
+    }
+
+    .row-cards {
+        gap: 12px;
+        padding: 8px 0;
+    }
+
+    .row-button {
+        font-size: 0.95rem;
+    }
+}
