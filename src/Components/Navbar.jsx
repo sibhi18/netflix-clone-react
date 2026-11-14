@@ -1,9 +1,10 @@
 import img1 from "../assets/Images/netflix1.jpg";
 import "../Styles/Navbar.css";
-import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
+
 import { IoNotifications } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
+import { FaSearch, FaBars, FaTimes, FaBell, FaUser } from "react-icons/fa";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
